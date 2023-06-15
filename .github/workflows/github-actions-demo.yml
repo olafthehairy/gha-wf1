@@ -1,0 +1,20 @@
+name: GitHub Actions Demo
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 6 * * SUN'
+  push:
+    paths-ignore:
+      - '.github'
+    branches:
+      - 'main'
+
+job:
+  echo:
+    name: Echo
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello
+        run: |
+          echo "Hello there"
