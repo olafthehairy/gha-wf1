@@ -6,8 +6,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  runs-on: ubuntu-latest
-  name: Test Action
   test-action:
     runs-on: ubuntu-latest
     steps:
