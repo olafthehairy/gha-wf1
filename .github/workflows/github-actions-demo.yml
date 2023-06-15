@@ -18,3 +18,13 @@ jobs:
       - name: Hello
         run: |
           echo "Hello there"
+  list:
+    name: List
+    - run: |
+        echo "${{ github.event_name }}"
+        echo "${{ github.ref }}"  
+    - uses: actions/checkout@v3.3.0
+    - name:
+      run: |
+        echo "List all"
+        ls -la
