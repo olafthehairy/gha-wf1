@@ -10,7 +10,7 @@ on:
     branches:
       - 'main'
 
-job:
+jobs:
   echo:
     name: Echo
     runs-on: ubuntu-latest
